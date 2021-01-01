@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">newyearhack</string>
+    <string name="title_activity_splash">Splash</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="login">Login</string>
+    <string name="i_m_new">I\'m New</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="resolution_tracker">Resolution Tracker</string>
+    <string name="user_profile">User Profile</string>
+    <string name="welcome_insert_name_here">Welcome, *Insert Name Here*</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="resolution_settings">Resolution Settings</string>
+    <string name="sign_out">Sign Out</string>
 </resources>
