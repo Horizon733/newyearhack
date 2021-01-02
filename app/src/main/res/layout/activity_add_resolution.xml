@@ -5,28 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddResolutionActivity">
-<com.google.android.material.appbar.AppBarLayout
-    android:id="@+id/appbar_add_res"
-    android:layout_width="match_parent"
-    android:layout_height="?actionBarSize"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add Resolution"
-            android:textColor="@android:color/white"
-            android:layout_margin="16dp"
-            android:textSize="18sp"
-            android:layout_gravity="start"/>
-    </androidx.appcompat.widget.Toolbar>
 
-</com.google.android.material.appbar.AppBarLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/resolution_drop_down"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -37,7 +16,7 @@
         app:hintTextColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appbar_add_res" >
+        app:layout_constraintTop_toTopOf="parent" >
 
         <AutoCompleteTextView
             android:id="@+id/productWeightUnitDropdown"
