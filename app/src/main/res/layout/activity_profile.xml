@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/inner_frame_layout_padding"
-        android:boxedEdges="all"
         tools:ignore="MissingPrefix">
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -41,7 +40,7 @@
             android:layout_marginEnd="150dp"
             android:layout_marginBottom="0dp"
             android:text="@string/user_profile"
-            android:textAlignment="textStart"
+            android:textAlignment="center"
             android:textColor="@color/colorAccent"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -74,8 +73,9 @@
             android:layout_marginTop="50dp"
             android:layout_marginEnd="50dp"
             android:background="@drawable/splash_button"
+            android:backgroundTint="@color/colorAccent"
             android:text="@string/notification_settings"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -91,8 +91,9 @@
             android:layout_marginTop="40dp"
             android:layout_marginEnd="50dp"
             android:background="@drawable/splash_button"
+            android:backgroundTint="@color/colorAccent"
             android:text="@string/resolution_settings"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -108,8 +109,9 @@
             android:layout_marginTop="40dp"
             android:layout_marginEnd="50dp"
             android:background="@drawable/splash_button"
+            android:backgroundTint="@color/colorAccent"
             android:text="@string/sign_out"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

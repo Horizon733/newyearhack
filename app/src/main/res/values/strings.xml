@@ -15,4 +15,7 @@
     <string name="notification_settings">Notification Settings</string>
     <string name="resolution_settings">Resolution Settings</string>
     <string name="sign_out">Sign Out</string>
+    <string name="exercise">Exercise regularly</string>
+    <string name="healthDiet">Stick to a healthy diet</string>
+    <string name="treePlant">Plant a tree</string>
 </resources>
