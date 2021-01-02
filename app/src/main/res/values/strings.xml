@@ -11,11 +11,13 @@
     <string name="title_activity_profile">Profile</string>
     <string name="resolution_tracker">Resolution Tracker</string>
     <string name="user_profile">User Profile</string>
-    <string name="welcome_insert_name_here">Welcome, *Insert Name Here*</string>
+    <string name="dashboard">Dashboard</string>
     <string name="notification_settings">Notification Settings</string>
     <string name="resolution_settings">Resolution Settings</string>
     <string name="sign_out">Sign Out</string>
     <string name="exercise">Exercise regularly</string>
     <string name="healthDiet">Stick to a healthy diet</string>
     <string name="treePlant">Plant a tree</string>
+    <string name="username">username</string>
+    <string name="email_id">email id</string>
 </resources>

@@ -1,49 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".Profile"
-    tools:deviceIds="wear">
+    tools:context=".ActivityProfile">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/inner_frame_layout_padding"
-        tools:ignore="MissingPrefix">
+        tools:ignore="MissingPrefix"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            app:shapeAppearanceOverlay="@style/circleImageView"
             android:id="@+id/profilePic"
-            android:layout_width="214dp"
-            android:layout_height="218dp"
-            android:layout_below="@+id/pageLabel"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="100dp"
-            tools:srcCompat="@tools:sample/avatars" />
-
-        <TextView
-            android:id="@+id/pageLabel"
-            android:layout_width="91dp"
-            android:layout_height="wrap_content"
+            android:layout_width="114dp"
+            android:layout_height="110dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:layout_marginBottom="0dp"
-            android:text="@string/user_profile"
-            android:textAlignment="center"
-            android:textColor="@color/colorAccent"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="270dp"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/welcome"
@@ -53,68 +36,88 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="0dp"
-            android:text="@string/welcome_insert_name_here"
-            android:textAlignment="center"
+            android:text="@string/dashboard"
             android:textColor="@color/colorAccent"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/notifSettings"
-            android:layout_width="280dp"
+        <TextView
+            android:id="@+id/welcome2"
+            android:layout_width="332dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/welcome"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/splash_button"
-            android:backgroundTint="@color/colorAccent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
             android:text="@string/notification_settings"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/resSettings"
-            android:layout_width="280dp"
+        <TextView
+            android:id="@+id/welcome3"
+            android:layout_width="332dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/notifSettings"
+            android:layout_below="@+id/welcome2"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/splash_button"
-            android:backgroundTint="@color/colorAccent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
             android:text="@string/resolution_settings"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/signOut"
-            android:layout_width="280dp"
+        <TextView
+            android:id="@+id/welcome5"
+            android:layout_width="332dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/resSettings"
+            android:layout_below="@+id/welcome3"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/splash_button"
-            android:backgroundTint="@color/colorAccent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
             android:text="@string/sign_out"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-250dp"
+            android:layout_marginTop="39dp"
+            android:layout_toEndOf="@+id/profilePic"
+            android:text="@string/username"
+            android:textColor="@color/colorAccent"
             android:textSize="18sp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginStart="-250dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/profilePic"
+            android:text="@string/email_id"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
-</androidx.wear.widget.BoxInsetLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
