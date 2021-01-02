@@ -66,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
-        />
+        android:autofillHints="Provide your email" />
 
     <EditText
         android:id="@+id/inputPassword"
@@ -79,7 +79,7 @@
         android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="16dp"
         android:ems="10"
-        android:hint="@string/password"
+        android:hint="Password"
         android:inputType="textPassword"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +94,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_bg"
-        android:text="@string/login"
+        android:text="LOGIN"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -109,7 +109,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/forgot_password"
+        android:text="FORGOT PASSWORD?"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -122,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/or"
+        android:text="OR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
@@ -143,16 +143,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/google"
-            android:contentDescription="@string/google_icon" />
+            app:srcCompat="@drawable/google" />
 
         <ImageView
             android:id="@+id/facebookLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/facebook"
-            android:contentDescription="@string/facebook_icon" />
+            app:srcCompat="@drawable/facebook" />
     </LinearLayout>
 
     <TextView
@@ -162,7 +160,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/new_user_register_now"
+        android:text="New User? Register Now"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
