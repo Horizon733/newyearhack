@@ -1,8 +1,10 @@
 package com.example.newyearhack.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.newyearhack.AddResolutionActivity
 import com.example.newyearhack.R
 import com.example.newyearhack.databinding.ActivityHomeBinding
 import kotlinx.android.synthetic.main.activity_home.*
@@ -18,6 +20,10 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         homeBinding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(homeBinding.root)
+        homeBinding.fab.setOnClickListener {
+            val intent = Intent(this@HomeActivity,AddResolutionActivity::class.java)
+            startActivity(intent)
+        }
         supportFragmentManager.beginTransaction().add(R.id.views,fragment1,"dashboard").commit()
         supportFragmentManager.beginTransaction().add(R.id.views,fragment2,"medals").hide(fragment2).commit()
         supportFragmentManager.beginTransaction().add(R.id.views,fragment3,"sprint").hide(fragment3).commit()
