@@ -17,6 +17,7 @@
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
     android:layout_marginTop="16dp"
+    android:progress="25"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"
@@ -42,19 +43,10 @@
        android:text="Last activities"
        android:layout_marginStart="16dp"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@id/resolution_list"/>
+       app:layout_constraintTop_toBottomOf="@id/resolution_list"
+       app:layout_constraintBottom_toTopOf="@id/last_activities"/>
 
-   <TextView
-       android:id="@+id/see_all_btn"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_gravity="end"
-       android:layout_marginStart="16dp"
-       android:text="see all"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.936"
-       app:layout_constraintStart_toEndOf="@id/last_activities"
-       app:layout_constraintTop_toBottomOf="@id/resolution_list" />
+
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/activities_list"
        android:layout_width="match_parent"
