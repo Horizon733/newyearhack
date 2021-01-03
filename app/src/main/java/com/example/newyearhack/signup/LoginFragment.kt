@@ -60,7 +60,7 @@ class LoginFragment : Fragment() {
                     Toast.makeText(context, "Error occured", Toast.LENGTH_SHORT).show()
                 } else if (task.isSuccessful) {
                     view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeActivity)
-                   // (activity as MainActivity).finish()
+                   (activity as SignupActivity).finish()
                 }
             }
         }

@@ -35,6 +35,37 @@ class HomeActivity : AppCompatActivity() {
 
         bottomNavigationView.background = null
         bottomNavigationView.menu.getItem(2).isEnabled = false
+        homeBinding.bottomNavigationView.setOnNavigationItemReselectedListener {item->
+            when(item.itemId){
+                R.id.dashboard -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.views,fragment1).remove(active).commit()
+                    active = fragment1
+                    true
+                }
+
+                R.id.medals -> {
+                    supportFragmentManager.beginTransaction().remove(active).replace(R.id.views,fragment2).commit();
+                    active = fragment2
+                    true
+                }
+                R.id.miSprint -> {
+                    supportFragmentManager.beginTransaction().remove(active).replace(R.id.views,fragment3).commit();
+                    active = fragment3
+                    true
+                }
+                R.id.miSettings -> {
+                    supportFragmentManager.beginTransaction().remove(active).replace(R.id.views,fragment4).commit();
+                    active = fragment4
+                    true
+                }
+                else -> {
+                    supportFragmentManager.beginTransaction().remove(active).replace(R.id.views,fragment1).commit();
+                    active = fragment1
+                    true
+                }
+
+            }
+        }
         homeBinding.bottomNavigationView.setOnNavigationItemSelectedListener {item->
 
             when(item.itemId){
