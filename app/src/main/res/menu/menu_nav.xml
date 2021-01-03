@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/dashboard"
+        android:title=""
+        android:icon="@drawable/ic_dashboard" />
+
+    <item android:id="@+id/medals"
+        android:title=""
+        android:icon="@drawable/ic_medal" />
+
+    <item android:id="@+id/placeholder"
+        android:title=""
+        />
+
+    <item android:id="@+id/miSprint"
+        android:icon="@drawable/ic_sprint"
+        android:title="" />
+
+    <item android:id="@+id/miSettings"
+        android:title=""
+        android:icon="@drawable/ic_settings" />
+</menu>
