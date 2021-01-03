@@ -19,7 +19,7 @@ class AddResolutionActivity : AppCompatActivity() {
         val items = listOf("Plant a Tree", "Daily Sprint", "Eat Healthy", "Custom Resolution")
         val adapter = ArrayAdapter(this, R.layout.drop_down_list, items)
         addResolutionBinding.resolutionDd.setAdapter(adapter)
-        
+
 
         val items1 = listOf("kg", "cm", "mm")
         val adapter1 = ArrayAdapter(this, R.layout.drop_down_list, items1)
@@ -33,32 +33,28 @@ class AddResolutionActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
         menuInflater.inflate(R.menu.add_resolution_menu,menu)
+
         return true
     }
-    val actionModeCallback = object: ActionMode.Callback{
-        override fun onCreateActionMode(mode: ActionMode?, menu: Menu?): Boolean {
-            menuInflater.inflate(R.menu.add_resolution_menu,menu)
-            return true
-        }
 
-        override fun onPrepareActionMode(mode: ActionMode?, menu: Menu?): Boolean {
-            return false
-        }
-
-        override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
-            return when(item?.itemId){
-                R.id.save -> {
-                    Toast.makeText(this@AddResolutionActivity,"Saved",Toast.LENGTH_SHORT).show()
-                    finish()
-                    true
-                }
-                else -> false
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+         super.onOptionsItemSelected(item)
+        val id = item.itemId
+        when(id){
+            R.id.save->{
+                Toast.makeText(this,"Saved",Toast.LENGTH_SHORT).show()
+                finish()
+                true
             }
+            R.id.cancel->{
+                finish()
+                true}
         }
-        override fun onDestroyActionMode(mode: ActionMode?) {
+        return true
 
-        }
     }
+
+
 
 
 }
