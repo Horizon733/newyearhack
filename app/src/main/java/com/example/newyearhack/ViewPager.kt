@@ -1,14 +1,14 @@
 package com.example.newyearhack
 
-import androidx.recyclerview.widget.RecyclerView
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.LayoutInflater
+import androidx.recyclerview.widget.RecyclerView
+import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.item_page.view.*
 
-class ViewPager(private var labels : List<String>, private var images : List<Int>) :
 
-    RecyclerView.Adapter<ViewPager.ViewPagerHolder>(){
+class ViewPager(private var labels : List<String>, private var images : List<Int>) : RecyclerView.Adapter<ViewPager.ViewPagerHolder>(){
 
     inner class ViewPagerHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 

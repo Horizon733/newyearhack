@@ -3,4 +3,7 @@
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#FF7000</color>
+    <color name="firstSplash">#2C5094</color>
+    <color name="secondSplash">#259A86</color>
+    <color name="thirdSplash">#B55745</color>
 </resources>

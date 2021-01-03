@@ -9,7 +9,7 @@
     <string name="login">Login</string>
     <string name="i_m_new">I\'m New</string>
     <string name="title_activity_profile">Profile</string>
-    <string name="resolution_tracker">Resolution Tracker</string>
+    <string name="resolution_tracker">Set a Resolution</string>
     <string name="user_profile">User Profile</string>
     <string name="dashboard">Dashboard</string>
     <string name="notification_settings">Notification Settings</string>
