@@ -3,7 +3,11 @@
     margin: 0;
     
 }
-
+.logo{
+    width: 5000px;
+    height: auto;
+    padding: 10px 10px;
+}
 .wrapper{
     background: url(ny.png.png) no-repeat;
    opacity: 0.85;
@@ -265,4 +269,8 @@ a:hover {
             margin: 5px auto;
         }
     } 
-  
+	
+.how{
+	font-style: normal;
+        font-size: 20px;
+}
