@@ -20,4 +20,16 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+    <style name="button_rg" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="elevation">6dp</item>
+    </style>
+    <style name="text_button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:padding">8dp</item>
+    </style>
 </resources>

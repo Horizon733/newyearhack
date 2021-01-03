@@ -24,7 +24,7 @@
     <string name="add_resolution">Add Resolution</string>
 
     <string name="login">Login</string>
-<string name="i_m_new">I\'m New</string>
+<string name="skip">Skip</string>
 <string name="title_activity_profile">Profile</string>
 <string name="resolution_tracker">Set a Resolution</string>
 <string name="user_profile">User Profile</string>
@@ -37,4 +37,14 @@
 <string name="treePlant">Plant a tree</string>
 <string name="username">username</string>
 <string name="email_id">email id</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_link_text">Already have an account? Login</string>
+    <string name="register_link_text">Don\'t have an account? Register</string>
+    <string name="join_us">Join Us</string>
+    <string name="confrim_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="forgot_password">Forgot Password</string>
 </resources>
