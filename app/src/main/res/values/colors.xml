@@ -3,7 +3,11 @@
     <color name="colorPrimary">#FF7000</color>
     <color name="colorPrimaryDark">#E26A0D</color>
     <color name="colorAccent">#FF9B4D</color>
-    <color name="colorPrimaryLight">#FFF5EE</color>
-    <color name="gray">#788993</color>
-    <color name="lightGray">#F2F5F9</color>
+    <color name="firstSplash">#2C5094</color>
+    <color name="secondSplash">#259A86</color>
+    <color name="thirdSplash">#B55745</color>
+        <color name="colorPrimaryLight">#FFF5EE</color>
+        <color name="gray">#788993</color>
+        <color name="lightGray">#F2F5F9</color>
+
 </resources>

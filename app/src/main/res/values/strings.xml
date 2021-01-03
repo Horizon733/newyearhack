@@ -22,4 +22,19 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="add_resolution">Add Resolution</string>
+
+    <string name="login">Login</string>
+<string name="i_m_new">I\'m New</string>
+<string name="title_activity_profile">Profile</string>
+<string name="resolution_tracker">Set a Resolution</string>
+<string name="user_profile">User Profile</string>
+<string name="dashboard">Dashboard</string>
+<string name="notification_settings">Notification Settings</string>
+<string name="resolution_settings">Resolution Settings</string>
+<string name="sign_out">Sign Out</string>
+<string name="exercise">Exercise regularly</string>
+<string name="healthDiet">Stick to a healthy diet</string>
+<string name="treePlant">Plant a tree</string>
+<string name="username">username</string>
+<string name="email_id">email id</string>
 </resources>
